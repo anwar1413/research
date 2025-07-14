@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ride App - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 data-en="Welcome to Ride App" data-ar="مرحبًا بك في تطبيق المشاوير">Welcome to Ride App</h1>
+
+  <label for="lang">Choose Language | اختر اللغة:</label>
+  <select id="lang" onchange="setLang(this.value)">
+    <option value="en">English</option>
+    <option value="ar">العربية</option>
+  </select>
+
+  <br><br>
+  <button onclick="window.location.href='rider.html'">🚕 <span data-en="I'm a Rider" data-ar="أنا راكب">I'm a Rider</span></button>
+  <button onclick="window.location.href='driver.html'">🚗 <span data-en="I'm a Driver" data-ar="أنا سائق">I'm a Driver</span></button>
+
+  <script src="lang.js"></script>
+</body>
+</html>
